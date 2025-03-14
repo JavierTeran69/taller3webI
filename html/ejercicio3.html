@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro Completo</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Formulario de Registro Completo</h1>
+
+    <form>
+<p>
+    <label for="nombrecompleto">Nombre Completo (Obligatorio):</label>
+    <input type="text" name="nombrecompleto" id="nombrecompleto" required>
+</p>
+
+<p>
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" name="correo" id="correo" required placeholder="ejemplo@gmail.com">
+</p>
+
+<p>
+    <label for="edad">Edad:</label>
+    <input type="edad" name="edad" id="edad" required>
+</p>
+<p>
+    <label for="telefono">Teléfono:</label>
+    <input type="number" name="telefono" id="telefono" required>
+</p>
+<p>
+    <label for="contraseña">Contraseña:</label>
+    <input type="contraseña" name="contraseña" id="contraseña" required>
+</p>
+<p>
+    <label for="paginaweb">Página Web Personal:</label>
+    <input type="url" name="paginaweb" id="paginaweb" required placeholder="http://www.tusitio.com">
+</p>
+
+<p>
+    <label for="fechanacimiento">Fecha de Nacimiento:</label>
+    <input type="date" name="fechanacimiento" id="fechanacimiento" required>
+</p>
+<p>
+    <label for="fechayhora">Fecha y Hora</label>
+    <input type="datetime-local" name="fechayhora" id="fechayhora" required>
+</p>
+<p>
+    <label for="mesdenacimiento">Mes de Nacimiento:</label>
+    <input type="month" name="mesdenacimiento" id="mesdenacimiento" required>
+</p>
+<p>
+    <label for="semanafav">Semana Favorita del Año:</label>
+    <input type="week" name="semanafav" id="semanafav" required>
+</p>
+
+<p>
+    <label for="nivelsatisfaccion">Nivel de Satisfacción (0-10):</label>
+    <input type="range" name="nivelsatisfaccion" id="nivelsatisfaccion" required min="0" max="10">
+</p>
+<p>
+    <label for="colorfav">Color Favorito:</label>
+    <input type="color" name="colorfav" id="colorfav" required>
+</p>
+<p>
+    <label for="buscar">Buscar:</label>
+    <input type="search" name="buscar" id="buscar" required>
+</p>
+<p>
+    <label for="subirarchivo">Sube un archivo:</label>
+    <input type="file" name="subirarchivo" id="subirarchivo" required>
+</p>
+<p>
+    <label for="genero">Género:</label>
+    <input type="radio" name="genero" id="genero_masculino" value="hombre" required> Hombre
+    <input type="radio" name="genero" id="genero_femenino" value="mujer" required> Mujer
+</p>
+<p>
+    <input type="checkbox" name="terminos" id="terminos" required>
+    <label for="terminos">Acepto los términos y condiciones</label>
+</p>
+<p>
+    <label for="pais">Selecciona tu pais:</label>
+    <select name="pais" id="pais" required>
+        <option value="colombia">Colombia</option>
+        <option value="mexico">Mexico</option>
+        <option value="argentina">Argentina</option><br><br>
+    </select>
+    <p>
+        <label for="codigoRegistro">Codigo de Registro(Solo lectura):</label>
+        <input type="text" name="codigoRegistro" id="codigoRegistro" readonly value="REG123">
+    </p>
+
+    <p>
+        <label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario" required placeholder="Escribe aqui tu mensaje..."></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </p>
+    </form>
+</body>
+</html>
